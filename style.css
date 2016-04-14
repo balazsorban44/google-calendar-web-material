@@ -1,0 +1,310 @@
+/* ---------------
+name: Google Calendar Material
+author: @bazsi44
+e-mail: info@balazsorban.com
+matches: https://calendar.google.com*
+version: 1.3
+------------------ */
+@-moz-document url-prefix(https://calendar.google.com/) {
+/*HIDDEN*/
+::-webkit-scrollbar, #gb#gb span.gb_P, #navfooter, #mg-more, .date-top, .qnb-qab, .qnb-container .goog-imageless-button-content, .trans-strip, .applogo, .wk-dummyth {
+    display: none;
+}
+::-webkit-input-placeholder {
+    color: transparent
+}
+
+/*NAVBAR*/
+
+.gb_Nb .gb_Pb {
+    background: none
+}
+.gb_Nb .gb_Pb:after {
+    position: absolute;
+    top: -15px;
+    left: 35px;
+    font-size: 1.5em;
+    color: white;
+    content: "Calendar"
+}
+.gb_ge {
+
+    background: #4285f4;
+    box-shadow: 0px 0px 10px black;
+    z-index:1
+}
+#gbqfb {
+    position: relative;
+    left: -600px;
+    background: transparent
+}
+#gbqfq {
+    position:fixed;
+    left:30px;
+    color: white;
+}
+input#gbqfq.gbqfif{
+padding-left:30px}
+.gbqfqw {
+    width:37vw;
+    background: #4285f4;
+    border: none;
+}
+.gbqfqwb {
+    border-radius: 2px;
+    background: #5e97f6
+}
+#nav {
+    width: 13%;
+}
+
+/*Buttons*/
+#vr-nav{
+top:0;
+height:15vh;
+background: url('http://i.imgur.com/eMZI4dD.jpg') no-repeat -10px -210px fixed;
+background-size:102% auto;
+margin:0}
+#mg-settings {
+    padding: 0px;
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: 0s
+}
+#mg-settings:hover {
+    box-shadow: none
+}
+#mg-settings .goog-imageless-button-outer-box {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAGklEQVQ4y2NgGAVEg/9EAMo0jHp61NOjAAgAUWrXKeQhPE4AAAAASUVORK5CYII=') no-repeat;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    top: 18px;
+}
+#mainnav {
+    background:transparent;
+    position: fixed;
+    z-index: 1000
+}
+#topLeftNavigation{
+top:7px;
+position:fixed}
+
+.nav-table{
+position:absolute;
+left:40vw;}
+
+#topRightNavigation {
+top:7px;
+position: fixed;
+right:150px
+}
+
+/*DAYS*/
+.wk-weektop{
+top: -33px;
+position: relative;}
+.wk-allday, .wk-weektop{
+background-color:transparent}
+
+.wk-dayname {
+    border-top:none;
+    position:relative;
+    font-size: 250%;
+    font-weight: bold;
+    color: white;
+}
+.wk-today {
+    font-size:300%;
+    position:relative;
+    color: #444;
+                                    
+}
+#topcontainerwk{
+height:60px}
+
+
+
+.qnb-container {
+    position: fixed;
+    bottom: 44px;
+    right: 44px;
+    z-index: 10000
+}
+.qnb-container{
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
+}
+
+.qnb-container .goog-imageless-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAABlBMVEX///////9VfPVsAAAAAXRSTlMAQObYZgAAABdJREFUeAFjgABGRghNTS4jCkDj0s5eABYmADXjpGKcAAAAAElFTkSuQmCC);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #db4437;
+    cursor: default;
+}
+
+.qnb-container .goog-imageless-button:hover {
+    border: none;
+    background-color: #e06e55;
+    transform: rotate(90deg);
+	transition:0.2s
+}
+.monthtableBody .dp-cell {
+    height: 32px;
+    border-radius: 50%;
+}
+.dp-weekday-selected, .dp-weekend-selected {
+    background-color: white
+}
+.dp-today-selected, .dp-today, .dp-onhover {
+    color: white;
+    background: #4285f4;
+    border: none
+}
+
+
+
+/*Main Calendar*/
+.rb-ni {
+    color: white
+}
+.ct, .tg-dualmarker, .tg-dualmarker60 {
+    border-bottom: none;
+    border-top: 1px solid rgba(20, 20, 20, 0.03)
+}
+#gridcontainer {
+    background:transparent;
+    left: 15%;
+    position: absolute;
+    width: 85%
+}
+
+
+.chip dd, .chip dt {
+    font-size: 110%;
+    color: #fff
+}
+.chip dt {
+    font-size: 120%
+}
+
+
+
+
+.nav-table {
+    position: absolute;
+    top: 8px;
+}
+.button-strip {
+    top: 8px
+}
+.tg-time-pri, .t5-time-sec, .tg-times-pri, .tg-times-sec, .mask-top, .mask-left, .mask-bottom, .mask-right, .chip dl, #weekViewAllDayBgwk, .wbkt .tg-timedevents, #searchAddCal, .st-c-pos div, .st-bg, .wk-allday .st-bg-next, .wk-allday .st-bg-today, .wk-allday .st-bg-td-first, .wk-allday .st-bg-td-last, .wk-dayname.wk-today, .wk-dayname.wk-tomorrow, #vr-nav {
+    border-color: transparent !important;
+}
+
+
+.st-c {
+    height: 1.5rem;
+}
+.st-c .te, .st-c .rb-n {
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+}
+.chip dl, .calListLabelOuter {
+    border-radius: 0.2rem;
+    min-height: 1.45rem;
+}
+.chip-color {
+    border-radius: 0.3rem;
+}
+.mask-top, .mask-left, .mask-bottom, .mask-right, .wk-dayname.wk-today, .wk-allday .st-bg-today {
+    background-color: transparent !important;
+}
+.tg-col {
+    border-left: 1px solid #F9F9F9;
+}
+.clstMenu, .calListSquare, .calListImg-stale, .calListImg-sel, .calListImg-hvr, .calListImg-opn {
+    border-color: white !important;
+    border-radius: 100%;
+}
+.calListLabel div {
+    background-color: #EAEAEA !important;
+}
+#calcontent.eui-t .calListRow, .goog-zippy-expanded .monthtableBody {
+    margin-top: 0.85rem;
+}
+.dp-monthtable.monthtableBody tbody tr {
+    height: 1.5rem;
+}
+.goog-zippy-expanded .monthtableBody {
+    padding-right: 0.2rem;
+    padding-left: 0;
+}
+.chromeColor.goog-zippy-content {
+    margin-left: -0.8rem
+}
+.calListLabelOuter:hover {
+    background: #F7F7F7 !important;
+}
+.chip dd, .chip dt {
+    padding: 5px 5px 0px 5px;
+}
+.tg-col-eventwrapper {
+    padding-left: 0.73rem;
+}
+.goog-imageless-button, .navbuttonouter {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    margin: 0
+}
+.tg-nowmarker {
+    width: 100%;
+    border-color: #4285f4;
+    z-index:1
+}
+.tg-nowptr {
+    border-radius: 50%;
+    width: 9px;
+    height: 9px;
+    background: #4285f4;
+}
+.tg-col-overlaywrapper {
+    position: static
+}
+/* CREATE EVENT*/
+
+.ep-ea, .ep-title, .ep-title .textinput {
+    margin: 0;
+    border: none;
+    background: #4285f4
+}
+.ep-title {
+    padding-left: 0
+}
+.ep-title .textinput {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.neb-data {
+    display: block;
+    visibility: visible
+}
+.ep-title:before {
+    position: relative;
+    top: 26px;
+    color: white;
+    padding-left: 10px;
+    content: 'Enter title, times, people, places...'
+}
+}
