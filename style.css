@@ -62,7 +62,7 @@ padding-left:30px}
 #vr-nav{
 top:0;
 height:15vh;
-background: url('http://i.imgur.com/eMZI4dD.jpg') no-repeat -10px -210px fixed;
+background: url('https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/bkg_03_march.jpg') no-repeat -10px -210px fixed;
 background-size:102% auto;
 margin:0}
 #mg-settings {
@@ -121,7 +121,7 @@ background-color:transparent}
     font-size:300%;
     position:relative;
     color: #444;
-                                    
+
 }
 #topcontainerwk{
 height:60px}
