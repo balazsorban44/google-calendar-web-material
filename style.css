@@ -1,12 +1,14 @@
-/* ---------------
-name: Google Calendar Material
-author: @bazsi44
-e-mail: info@balazsorban.com
-matches: https://calendar.google.com*
-version: 1.3
------------------- */
 @-moz-document url-prefix(https://calendar.google.com/) {
-/*HIDDEN*/
+
+  /* ---------------
+  name: Google Calendar Material
+  author: @bazsi44
+  e-mail: info@balazsorban.com
+  matches: https://calendar.google.com*
+  version: 1.4
+  ------------------ */
+
+  /*HIDDEN*/
 ::-webkit-scrollbar, #gb#gb span.gb_P, #navfooter, #mg-more, .date-top, .qnb-qab, .qnb-container .goog-imageless-button-content, .trans-strip, .applogo, .wk-dummyth {
     display: none;
 }
@@ -14,8 +16,9 @@ version: 1.3
     color: transparent
 }
 
-/*NAVBAR*/
+/*TOP*/
 
+/*NAVBAR*/
 .gb_Nb .gb_Pb {
     background: none
 }
@@ -28,11 +31,12 @@ version: 1.3
     content: "Calendar"
 }
 .gb_ge {
-
     background: #4285f4;
     box-shadow: 0px 0px 10px black;
     z-index:1
 }
+
+/*SEARCHBAR*/
 #gbqfb {
     position: relative;
     left: -600px;
@@ -43,91 +47,35 @@ version: 1.3
     left:30px;
     color: white;
 }
-input#gbqfq.gbqfif{
-padding-left:30px}
 .gbqfqw {
     width:37vw;
-    background: #4285f4;
+    background: transparent;
     border: none;
 }
 .gbqfqwb {
     border-radius: 2px;
     background: #5e97f6
 }
-#nav {
-    width: 13%;
-}
 
-/*Buttons*/
+/*Top image*/
 #vr-nav{
 top:0;
-height:15vh;
-background: url('https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/bkg_03_march.jpg') no-repeat -10px -210px fixed;
-background-size:102% auto;
+height:150px;
+background: url('https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/top-bg.png') no-repeat 0px -160px fixed;
+background-size:100%;
 margin:0}
-#mg-settings {
-    padding: 0px;
-    position: fixed;
-    height: 60px;
-    top: 0;
-    left: 0;
-    background: transparent;
-    transition: 0s
-}
-#mg-settings:hover {
-    box-shadow: none
-}
-#mg-settings .goog-imageless-button-outer-box {
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAGklEQVQ4y2NgGAVEg/9EAMo0jHp61NOjAAgAUWrXKeQhPE4AAAAASUVORK5CYII=') no-repeat;
-    height: 24px;
-    width: 24px;
-    position: relative;
-    top: 18px;
-}
-#mainnav {
-    background:transparent;
-    position: fixed;
-    z-index: 1000
-}
-#topLeftNavigation{
-top:7px;
-position:fixed}
 
-.nav-table{
-position:absolute;
-left:40vw;}
 
-#topRightNavigation {
-top:7px;
-position: fixed;
-right:150px
+/*Buttons*/
+
+.goog-imageless-button, .navbuttonouter {
+    border-radius: 0;
+    border: none;
+    padding: 0;
+    margin: 0
 }
 
-/*DAYS*/
-.wk-weektop{
-top: -33px;
-position: relative;}
-.wk-allday, .wk-weektop{
-background-color:transparent}
-
-.wk-dayname {
-    border-top:none;
-    position:relative;
-    font-size: 250%;
-    font-weight: bold;
-    color: white;
-}
-.wk-today {
-    font-size:300%;
-    position:relative;
-    color: #444;
-
-}
-#topcontainerwk{
-height:60px}
-
-
-
+/*New event*/
 .qnb-container {
     position: fixed;
     bottom: 44px;
@@ -157,116 +105,189 @@ height:60px}
     transform: rotate(90deg);
 	transition:0.2s
 }
-.monthtableBody .dp-cell {
-    height: 32px;
-    border-radius: 50%;
+
+
+/*Settings*/
+#mg-settings {
+    padding: 0px;
+    position: fixed;
+    height: 60px;
+    top: 0;
+    left: 0;
+    background: transparent;
+    transition: 0s
 }
-.dp-weekday-selected, .dp-weekend-selected {
-    background-color: white
+#mg-settings:hover {
+    box-shadow: none
 }
-.dp-today-selected, .dp-today, .dp-onhover {
-    color: white;
-    background: #4285f4;
-    border: none
+#mg-settings .goog-imageless-button-outer-box {
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAGklEQVQ4y2NgGAVEg/9EAMo0jHp61NOjAAgAUWrXKeQhPE4AAAAASUVORK5CYII=') no-repeat;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    top: 18px;
 }
 
 
 
-/*Main Calendar*/
-.rb-ni {
-    color: white
-}
-.ct, .tg-dualmarker, .tg-dualmarker60 {
-    border-bottom: none;
-    border-top: 1px solid rgba(20, 20, 20, 0.03)
-}
-#gridcontainer {
+/*Date buttons*/
+#mainnav {
     background:transparent;
-    left: 15%;
-    position: absolute;
-    width: 85%
+    position: fixed;
+    z-index: 1000
+}
+/*
+.date-nav-today .goog-imageless-button, .goog-imageless-button:hover, .navbuttonouter, .navbuttonouter:hover  {
+box-shadow:none;
+border:none;
+background:transparent;
+color:transparent
 }
 
 
-.chip dd, .chip dt {
-    font-size: 110%;
-    color: #fff
+.date-nav-today{
+background: url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/today.png) no-repeat center center;
 }
-.chip dt {
-    font-size: 120%
+.date-nav-prev{
+padding:0;
+position:relative;
+left:-65px
+}
+.date-nav-next{
+padding:0;
+position:relative;
+left:-41px
+}*/
+.nav-table{
+position:fixed;
+top:16px;
+left:50%;
+}
+
+#topRightNavigation {
+top:16px;
+position: fixed;
+right:25vw
+}
+
+/*Weekdays*/
+#topcontainerwk{
+position:relative;
+top:-30px}
+.wk-weektop, .wk-allday{background:transparent;}
+.wk-dayname {
+    border-top:none;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.wk-today {
+    font-size:2.2em;
+    position:relative;
+    color: #444;
+
 }
 
 
+/*Sidebar*/
 
-
-.nav-table {
-    position: absolute;
-    top: 8px;
-}
-.button-strip {
-    top: 8px
-}
-.tg-time-pri, .t5-time-sec, .tg-times-pri, .tg-times-sec, .mask-top, .mask-left, .mask-bottom, .mask-right, .chip dl, #weekViewAllDayBgwk, .wbkt .tg-timedevents, #searchAddCal, .st-c-pos div, .st-bg, .wk-allday .st-bg-next, .wk-allday .st-bg-today, .wk-allday .st-bg-td-first, .wk-allday .st-bg-td-last, .wk-dayname.wk-today, .wk-dayname.wk-tomorrow, #vr-nav {
-    border-color: transparent !important;
-}
-
-
-.st-c {
-    height: 1.5rem;
-}
-.st-c .te, .st-c .rb-n {
-    border-radius: 0.2rem;
-    padding: 0.2rem 0.5rem;
-}
-.chip dl, .calListLabelOuter {
-    border-radius: 0.2rem;
-    min-height: 1.45rem;
-}
-.chip-color {
-    border-radius: 0.3rem;
-}
-.mask-top, .mask-left, .mask-bottom, .mask-right, .wk-dayname.wk-today, .wk-allday .st-bg-today {
-    background-color: transparent !important;
-}
-.tg-col {
-    border-left: 1px solid #F9F9F9;
-}
-.clstMenu, .calListSquare, .calListImg-stale, .calListImg-sel, .calListImg-hvr, .calListImg-opn {
-    border-color: white !important;
-    border-radius: 100%;
-}
-.calListLabel div {
-    background-color: #EAEAEA !important;
-}
-#calcontent.eui-t .calListRow, .goog-zippy-expanded .monthtableBody {
-    margin-top: 0.85rem;
-}
-.dp-monthtable.monthtableBody tbody tr {
-    height: 1.5rem;
+#nav, #sidebar {
+    width: 14vw !important;
 }
 .goog-zippy-expanded .monthtableBody {
     padding-right: 0.2rem;
     padding-left: 0;
 }
-.chromeColor.goog-zippy-content {
-    margin-left: -0.8rem
+.monthtableBody .dp-cell {
+    position:relative;
+	padding:0rem 0.5rem !important;
+    line-height:2.5rem;
+    border-radius: 50%;
 }
-.calListLabelOuter:hover {
-    background: #F7F7F7 !important;
+.dp-weekday-selected, .dp-weekend-selected {
+    background-color: transparent
+}
+.dp-today-selected, .dp-today, .dp-onhover {
+    padding:0;
+    color: white;
+    background: #4285f4;
+    border: none;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1)
+}
+
+
+
+
+
+
+/*Main Calendar*/
+#gridcontainer {
+    position:absolute;
+    left: 17%;
+    width: 83%
+}
+/*Reminders*/
+.st-c .te, .st-c .rb-n {
+    border-radius: 0.3rem;
+     padding: 0.4rem 0rem;
+}
+.rb-ni {
+    text-align:center;
+
+    font-size:1.2em;
+    color: white
+}
+
+/*Table borders*/
+.ct, .tg-dualmarker, .tg-dualmarker60 {
+    border-bottom: none;
+    border-top: 1px solid rgba(20, 20, 20, 0.03)
+}
+.tg-col {
+    border-left: 1px solid #F9F9F9;
+}
+
+
+
+
+/*Table texts*/
+.chip dd, .chip dt {
+    color: #fff
+}
+
+.wk-border{
+position:relative;
+left:15px
+}
+.tg-time-pri, .t5-time-sec, .tg-times-pri, .tg-times-sec, .mask-top, .mask-left, .mask-bottom, .mask-right, .chip dl, #weekViewAllDayBgwk, .wbkt .tg-timedevents, #searchAddCal, .st-c-pos div, .st-bg, .wk-allday .st-bg-next, .wk-allday .st-bg-today, .wk-allday .st-bg-td-first, .wk-allday .st-bg-td-last, .wk-dayname.wk-today, .wk-dayname.wk-tomorrow, #vr-nav {
+    border-color: transparent !important;
+}
+.mask-top, .mask-left, .mask-bottom, .mask-right, .wk-dayname.wk-today, .wk-allday .st-bg-today {
+    background-color: transparent !important;
+}
+
+/*Events*/
+.chip dl, .calListLabelOuter {
+    border-radius: 0.3rem;
+    min-height: 1.7rem;
 }
 .chip dd, .chip dt {
+    overflow:visible;
     padding: 5px 5px 0px 5px;
+    line-height:1em;
+    font-size: 1.2em
 }
 .tg-col-eventwrapper {
     padding-left: 0.73rem;
 }
-.goog-imageless-button, .navbuttonouter {
-    border-radius: 0;
-    border: none;
-    padding: 0;
-    margin: 0
+
+.drag-chip-wrapper {
+    position: relative;
 }
-.tg-nowmarker {
+
+/*Now marker*/
+
+#tgnowmarker {
     width: 100%;
     border-color: #4285f4;
     z-index:1
@@ -280,6 +301,9 @@ height:60px}
 .tg-col-overlaywrapper {
     position: static
 }
+
+
+
 /* CREATE EVENT*/
 
 .ep-ea, .ep-title, .ep-title .textinput {
