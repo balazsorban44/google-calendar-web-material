@@ -6,9 +6,11 @@
 // ==/UserScript==
 
 var bg= document.getElementsByClassName("bubblemain");
+document.getElementsByClassName("bubblemain").onload=function(){
 var title= document.getElementsByClassName("ui-sch-schmedit")[0].innerHTML;
-if(  title.indexOf('gig') != -1|| title.indexOf('concert') != -1 ){
-    bg[0].style.backgroundImage = "url('https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/event_flairs/gig.png')";
+if( title.indexOf('gig') != -1|| title.indexOf('concert') != -1 ){
+    bg.style.backgroundImage = "url('https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/event_flairs/gig.png')";
 } else if(  title.indexOf('Work') != -1|| title.indexOf('Workout') != -1 ){
-    bg[0].style.backgroundImage = "url('https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/event_flairs/gym.png')";
+    bg.style.backgroundImage = "url('https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/event_flairs/gym.png')";
+}
 }
