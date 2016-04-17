@@ -248,12 +248,16 @@ top:-30px}
 
 /*Table texts*/
 .chip dd{
+padding-top:10px;
 position:relative;
+top:-1.5em;
 height:100%;
-	background-repeat:no-repeat;
     background-size: 100% auto;
     background-position: top center;}
-
+.chip dt{
+position:relative;
+top: 1em;
+z-index:1}
 .wk-border{
 position:relative;
 left:15px
@@ -288,15 +292,18 @@ left:15px
 
 
 .bubblemain{
-    background: url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/event_flairs/code.png);
+    background: url(https://goo.gl/O14CLC);
 	background-repeat:no-repeat;
     background-size: 100% auto;
     background-position: top center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
 }
-.bubble{
+.bubble, .hin-bubble .title-text, .hin-bubble .when{
     box-shadow:none;
 	color:white;
-
+    border-radius:10px;
 }
 
 
@@ -322,9 +329,12 @@ position:absolute;
 left:0;
 top:100%;
 box-sizing:border-box;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
 border:1px solid lightgrey}
+
 .neb-bold-action{
-padding-left:10px}
+padding-left:10px;}
 
 /*Now marker*/
 
