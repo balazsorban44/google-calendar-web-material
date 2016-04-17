@@ -4,12 +4,13 @@
   // @description   Google Calendar Web Material event flairs
   // @match         https://calendar.google.com/*
   // @version       1.0
+  // @grant GM_addStyle
   // ==/UserScript==
 
 
-  for (i = 0; i < document.querySelectorAll('.chip dd').length; i++) {
-      if (document.querySelectorAll(".chip dd")[i].innerHTML.indexOf('Work') != -1){
-        document.querySelectorAll(".chip dd")[i].style.backgroundImage = "url('https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/event_flairs/gym.png')";
+var select=document.querySelectorAll('.chip dd');
+  for (i = 0; i < select.length; i++) {
+      if (select[i].innerHTML.indexOf('Work') != -1){
+        select[i].style.backgroundImage = "url('https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/event_flairs/gym.png')";
       }
   }
-  
