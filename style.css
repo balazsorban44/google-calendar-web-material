@@ -7,7 +7,7 @@
   ------------------ */
 
   /*HIDDEN*/
-::-webkit-scrollbar, #gb#gb span.gb_P, #navfooter, #mg-more, .date-top, .qnb-qab, .qnb-container .goog-imageless-button-content, .trans-strip, .applogo, .wk-dummyth, .bottom-prong, .neb-rb-default, .delete-button {
+::-webkit-scrollbar, #gb#gb span.gb_P, #navfooter, #mg-more, .date-top, .qnb-qab, .qnb-container .goog-imageless-button-content, .trans-strip, .applogo, .wk-dummyth, .bottom-prong, .neb-rb-default, .delete-button{
     display: none;
 }
 ::-webkit-input-placeholder {
@@ -23,7 +23,7 @@
 .gb_Nb .gb_Pb:after {
     position: absolute;
     top: -15px;
-    left: 35px;
+    left: 5px;
     font-size: 1.5em;
     color: white;
     content: "Calendar"
@@ -31,7 +31,7 @@
 .gb_ge {
     background: #4285f4;
     box-shadow: 0px 0px 10px black;
-    z-index:1
+    z-index:1000
 }
 
 /*SEARCHBAR*/
@@ -52,14 +52,21 @@
 }
 .gbqfqwb {
     border-radius: 2px;
-    background: #5e97f6
+    background: #5e97f6;
+    width:70vw
 }
-
+.asb-w{
+padding:10px;
+position:relative;
+top:-10px;
+left:67vw;
+z-index:100
+}
 /*Top image*/
 #vr-nav{
 top:0;
 height:150px;
-background: url('https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/top-bg.png') no-repeat 0px -160px fixed;
+background: url(https://goo.gl/WqJft2) no-repeat 0px -160px fixed;
 background-size:100%;
 margin:0}
 
@@ -78,7 +85,7 @@ margin:0}
     position: fixed;
     bottom: 44px;
     right: 44px;
-    z-index: 10000
+    z-index: 1;
 }
 .qnb-container{
     border-radius: 50%;
@@ -86,13 +93,14 @@ margin:0}
     box-shadow: 0 0 4px rgba(0, 0, 0, .14), 0 4px 8px rgba(0, 0, 0, .28);
 }
 
-.qnb-container .goog-imageless-button {
+.qnb-container .goog-imageless-button, .qnb-container .goog-imageless-button:hover {
     width: 56px;
     height: 56px;
     border-radius: 50%;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAMAAAAolt3jAAAABlBMVEX///////9VfPVsAAAAAXRSTlMAQObYZgAAABdJREFUeAFjgABGRghNTS4jCkDj0s5eABYmADXjpGKcAAAAAElFTkSuQmCC);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xOSAxM2gtNnY2aC0ydi02SDV2LTJoNlY1aDJ2Nmg2djJ6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==);
+    background-size: 50% 50%;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-color: #db4437;
     cursor: default;
 }
@@ -110,8 +118,8 @@ margin:0}
     padding: 0px;
     position: fixed;
     height: 60px;
-    top: 0;
-    left: 0;
+    top: 60px;
+    right: 0;
     background: transparent;
     transition: 0s
 }
@@ -119,11 +127,13 @@ margin:0}
     box-shadow: none
 }
 #mg-settings .goog-imageless-button-outer-box {
-    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAQAAABKfvVzAAAAGklEQVQ4y2NgGAVEg/9EAMo0jHp61NOjAAgAUWrXKeQhPE4AAAAASUVORK5CYII=') no-repeat;
+    background: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik0xMiA4YzEuMSAwIDItLjkgMi0ycy0uOS0yLTItMi0yIC45LTIgMiAuOSAyIDIgMnptMCAyYy0xLjEgMC0yIC45LTIgMnMuOSAyIDIgMiAyLS45IDItMi0uOS0yLTItMnptMCA2Yy0xLjEgMC0yIC45LTIgMnMuOSAyIDIgMiAyLS45IDItMi0uOS0yLTItMnoiLz4KPC9zdmc+') no-repeat;
+    background-size:120%;
     height: 24px;
     width: 24px;
     position: relative;
     top: 18px;
+    opacity:1
 }
 
 
@@ -132,72 +142,71 @@ margin:0}
 #mainnav {
     background:transparent;
     position: fixed;
-    z-index: 1000
+
 }
-/*
-.date-nav-today .goog-imageless-button, .goog-imageless-button:hover, .navbuttonouter, .navbuttonouter:hover  {
+
+.date-nav-today .goog-imageless-button, .navbuttonouter, .navbuttonouter:hover  {
 box-shadow:none;
 border:none;
 background:transparent;
 color:transparent
 }
 .date-nav-today{
-background: url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/today.png) no-repeat center center;
+background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik0xOSAzaC0xVjFoLTJ2Mkg4VjFINnYySDVjLTEuMTEgMC0xLjk5LjktMS45OSAyTDMgMTljMCAxLjEuODkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWNWMwLTEuMS0uOS0yLTItMnptMCAxNkg1VjhoMTR2MTF6TTcgMTBoNXY1SDd6Ii8+Cjwvc3ZnPg==) no-repeat center center;
+background-size:50%
 }
 .date-nav-prev{
 padding:0;
 position:relative;
-left:-65px
+left:-77px
 }
 .date-nav-next{
 padding:0;
 position:relative;
 left:-41px
-}*/
+}
 .nav-table{
 position:fixed;
-top:16px;
-left:50%;
+top:80px;
+right:2%;
 }
 
 #topRightNavigation {
-top:16px;
+top:120px;
 position: fixed;
-right:25vw
+right:0
 }
 
-/*Weekdays*/
-#topcontainerwk{
-position:relative;
-top:-30px}
-.wk-weektop, .wk-allday{background:transparent;}
-.wk-dayname {
-    border-top:none;
-    font-size: 2em;
-    font-weight: bold;
-    color: white;
-}
-.wk-today {
-    font-size:2.2em;
-    position:relative;
-    color: #444;
-
-}
 
 
 /*Sidebar*/
 
-#nav, #sidebar {
-    width: 14vw !important;
+#nav{
+position:fixed;
+margin-left:0;
+top:60px;
+width:16%;
+height:100%;
+z-index:1;
+background-color:white;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.4)
 }
 .goog-zippy-expanded .monthtableBody {
     padding-right: 0.2rem;
     padding-left: 0;
 }
+#dp_h, #dp_0, #clst_my, #clst_fav, .calList{
+position:relative;
+width:85%;
+margin-left:7.5%}
+.monthtableBody{
+width:100%}
 .monthtableBody .dp-cell {
+    padding:0;
+    width:2rem;
+    height:2rem;
+    line-height:0.5rem;
     position:relative;
-	padding:0rem 0.5rem !important;
-    line-height:2.5rem;
     border-radius: 50%;
 }
 .dp-weekday-selected, .dp-weekend-selected {
@@ -211,14 +220,32 @@ top:-30px}
     box-shadow: 1px 1px 2px rgba(0,0,0,0.1)
 }
 
+/*Weekdays*/
+.wk-weektop, .wk-allday{background:transparent;}
+.wk-dayname {
+    border-top:none;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+.wk-today {
+    font-size:2.2em;
+    position:relative;
+    color: #444;
 
-
-
+}
+.wk-webcontent-td{
+height:auto;
+min-height:0px}
+.st-s, .st-c-pos{
+padding:0}
 
 
 /*Main Calendar*/
 #gridcontainer {
     position:absolute;
+    background:transparent;
+    top:-24px;
     left: 17%;
     width: 83%
 }
@@ -250,13 +277,16 @@ top:-30px}
 .chip dd{
 padding-top:10px;
 position:relative;
-top:-1.5em;
+top:-5px;
 height:100%;
-    background-size: 100% auto;
-    background-position: top center;}
+background-size: 100% auto;
+background-position: top center;
+background-repeat: no-repeat}
+
 .chip dt{
 position:relative;
 top: 1em;
+display:none;
 z-index:1}
 .wk-border{
 position:relative;
@@ -288,17 +318,22 @@ left:15px
 .drag-chip-wrapper {
     position: relative;
 }
+
+.hin-bubble .hin-ic, .cic-hin{
+background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik0xNC40IDZMMTQgNEg1djE3aDJ2LTdoNS42bC40IDJoN1Y2eiIvPgo8L3N2Zz4=) no-repeat;
+    background-size: 16px
+}
+
 /*Event bubble*/
 
 
 .bubblemain{
-    background: url(https://goo.gl/O14CLC);
-	background-repeat:no-repeat;
-    background-size: 100% auto;
+    background: url(https://goo.gl/WqJft2);
+    background-size: cover;
     background-position: top center;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    
+
 }
 .bubble, .hin-bubble .title-text, .hin-bubble .when{
     box-shadow:none;
@@ -306,19 +341,27 @@ left:15px
     border-radius:10px;
 }
 
-
+.bubbleclose{
+background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xOSA2LjQxTDE3LjU5IDUgMTIgMTAuNTkgNi40MSA1IDUgNi40MSAxMC41OSAxMiA1IDE3LjU5IDYuNDEgMTkgMTIgMTMuNDEgMTcuNTkgMTkgMTkgMTcuNTkgMTMuNDEgMTJ6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==) center center;
+    padding:8px;
+    background-size:80%
+}
 .neb-header .ui-sch-schmedit{
 color:white}
 
 .details-button, .details-button:hover {
-    background: url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/edit.png) no-repeat top center;
-	border:none;
-    background-size: 40px;
+   background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0zIDE3LjI1VjIxaDMuNzVMMTcuODEgOS45NGwtMy43NS0zLjc1TDMgMTcuMjV6TTIwLjcxIDcuMDRjLjM5LS4zOS4zOS0xLjAyIDAtMS40MWwtMi4zNC0yLjM0Yy0uMzktLjM5LTEuMDItLjM5LTEuNDEgMGwtMS44MyAxLjgzIDMuNzUgMy43NSAxLjgzLTEuODN6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==) no-repeat center center;
+    background-size: auto 50%;
+    padding:0;
+    border:0;
+	border-radius:50%;
+    background-color: #4285f4;
     position: absolute;
     bottom:0.8rem;
-    right:0;
-    height: 40px;
-    color:transparent;
+    right:10px;
+    font-size:0;
+    min-width: 40px !important;
+    height:40px !important
 }
 
 .neb-footer{
