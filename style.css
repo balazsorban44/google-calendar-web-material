@@ -1,5 +1,4 @@
 @-moz-document url-prefix(https: //calendar.google.com/) {
-
 /* ---------------
   name: Google Calendar Material
   author: @bazsi44
@@ -12,6 +11,7 @@
 ::-webkit-scrollbar {
     display: none
 }
+
 #gb#gb span.gb_P,
 #navfooter,
 #mg-more,
@@ -31,11 +31,14 @@
 }
 /*TOP*/
 /*NAVBAR*/
-
-.gb_Nb .gb_Pb {
-    background: none
+#onegoogbar{
+    position:relative;
+	box-shadow: 0px 0px 10px black;
+z-index:1000}
+.gb_Mb .gb_Qb{
+    background:none
 }
-.gb_Nb .gb_Pb:after {
+.gb_Mb .gb_Qb:after {
     position: absolute;
     top: -15px;
     left: 5px;
@@ -43,10 +46,9 @@
     color: white;
     content: "Calendar"
 }
-.gb_ge {
+.gb_he {
     background: #4285f4;
-    box-shadow: 0px 0px 10px black;
-    z-index: 100
+
 }
 /*SEARCHBAR*/
 
@@ -303,7 +305,7 @@ background-size:50%
     margin-bottom: 5px;
 }
 .chip dd,
-.cbrdcc {
+.cbrd, .cbrdcc{
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
     line-height: 1.1rem;

@@ -20,9 +20,9 @@ var event_flair = [
   [ "dentist", "dentistry", "dental", url_dic + "dentist.png)" ],
   [ "haircut", "hairdresser", "hair", url_dic + "haircut.png)" ],
   [ "manicure", "pedicure", "manicures", "pedicures", url_dic + "manicure.png)" ],
-  [ "gym", "workout", "workouts", url_dic + "gym.png)" ],
+  [ "gym", "workout", "work out", "workouts", url_dic + "gym.png)" ],
   [ "swimming", "swim", "swims", url_dic + "swim.png)" ],
-  [ "running", "jog", "jogging", "jogs", "runs", url_dic + "runs.png)" ],
+  [ "running", "jog", "jogging", "jogs", "runs", "run", url_dic + "run.png)" ],
   [ "dancing", "dance", "dances", url_dic + "dance.png)" ],
   [ "cycling", "bicycle", "bike", "bicycles", "bikes", "Biking", url_dic + "bike.png)" ],
   [ "tennis", url_dic + "tennis.png)" ],
@@ -30,7 +30,7 @@ var event_flair = [
   [ "snow boarding", url_dic + "snowboarding.png)" ],
   [ "yoga", url_dic + "yoga.png)" ],
   [ "violin", "violins", url_dic + "violin.png)" ],
-  [ "hiking", "hike", "hikes", url_dic + "hiking.png)" ],
+  [ "hiking", "hike", "hikes", url_dic + "hike.png)" ],
   [ "pride", "dyke march", "christopher street day", "gay parade", "gay pride", "gayglers", "gaygler", "lesbian march", "lesbian parade", "lesbian pride", "euro pride", "europride", "world pride", "worldpride", url_dic + "pride.png)" ],
   [ "badminton", "billiard", url_dic + "badminton.png)" ],
   [ "bookclub", "book club", "reading", url_dic + "reading.png)" ],
@@ -70,11 +70,11 @@ var event_flair = [
 var target = document.querySelector('#gridcontainer');
 var observer = new MutationObserver(function(mutations) {
   mutations.forEach(function(mutation) {
-      console.log("changed");
-      var select = document.querySelectorAll('.chip dd, .cbrdcc');
+      //console.log("changed");
+      var select = document.querySelectorAll('.chip dd, .cbrd dd, .cbrdcc');
       for (i = 0; i < select.length; i++) {
           compareFunction = function(e) {
-              return select[i].innerText.indexOf(e) !== -1;
+              return select[i].innerText.toLowerCase().indexOf(e) !== -1;
           };
           for (j = 0; j < event_flair.length; j++) {
               if (event_flair[j].filter(compareFunction).length) {
