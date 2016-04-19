@@ -19,7 +19,7 @@ var event_flair = [
   [ "cinema", "movie", "movies", url_dic + "cinema.png)" ],
   [ "dentist", "dentistry", "dental", url_dic + "dentist.png)" ],
   [ "haircut", "hairdresser", "hair", url_dic + "haircut.png)" ],
-  [ "manicure", "pedicure", "manicures", "pedicures", url_dic + "manicure.png)" ],
+  [ "manicure", "pedicure", "manicures", "pedicures", url_dic + "pedicure.png)" ],
   [ "gym", "workout", "work out", "workouts", url_dic + "gym.png)" ],
   [ "swimming", "swim", "swims", url_dic + "swim.png)" ],
   [ "running", "jog", "jogging", "jogs", "runs", "run", url_dic + "run.png)" ],
