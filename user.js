@@ -48,14 +48,13 @@ var event_flair = [
   [ "dancing", "dance", "dances", flair_dic + "dance.png)" ],
   [ "cycling", "bicycle", "bike", "bicycles", "bikes", "Biking", flair_dic + "bike.png)" ],
   [ "tennis", flair_dic + "tennis.png)" ],
-  [ "skiing", "ski", "skis", "Snowboarding", "snowshoeing", "snow shoe", flair_dic + "ski.png)" ],
-  [ "snow boarding", flair_dic + "snowboarding.png)" ],
+  [ "skiing", "ski", "skis", "Snowboarding", "snowshoeing", "snow shoe", "snow boarding", flair_dic + "ski.png)" ],
   [ "yoga", flair_dic + "yoga.png)" ],
   [ "violin", "violins", flair_dic + "violin.png)" ],
   [ "hiking", "hike", "hikes", flair_dic + "hike.png)" ],
   [ "pride", "dyke march", "christopher street day", "gay parade", "gay pride", "gayglers", "gaygler", "lesbian march", "lesbian parade", "lesbian pride", "euro pride", "europride", "world pride", "worldpride", flair_dic + "pride.png)" ],
   [ "badminton", "billiard", flair_dic + "badminton.png)" ],
-  [ "bookclub", "book club", "reading", flair_dic + "reading.png)" ],
+  [ "read", "reading", "newspaper", "ebook", "bookclub", "book club", "reading", flair_dic + "reading.png)" ],
   [ "bowling", flair_dic + "bowling.png)" ],
   [ "golf", flair_dic + "golf.png)" ],
   [ "graduation", flair_dic + "graduation.png)" ],
@@ -85,7 +84,6 @@ var event_flair = [
   [ "French Course", "German Course", "English Course", "Italian Course", "Chinese Course", "Japanese Course", "Korean Course", "Polish Course", "Spanish Course", "Arabic Course", "Hebrew Course", "Portuguese Course", "Thai Course", "Russian Course", "Turkish Course", "Dutch Course", "Bulgarian Course", "Greek Course", "Hindi Course", "Indonesian Course", "Vietnamese Course", "Norwegian Course", "Swedish Course", "Slovenian Course", "Ukranian Course", "Slovak Course", "Lithuanian Course", "Latvian Course", "Hungarian Course", "Finnish Course", "Filipino Course", "Farsi Course", "Danish Course", "Czech Course", "Croatian Course", "Catalan Course", "French Class", "German Class", "English Class", "Italian Class", "Chinese Class", "Japanese Class", "Korean Class", "Polish Class", "Spanish Class", "Arabic Class", "Hebrew Class", "Portuguese Class", "Thai Class", "Russian Class", "Turkish Class", "Dutch Class", "Bulgarian Class", "Greek Class", "Hindi Class", "Indonesian Class", "Vietnamese Class", "Norwegian Class", "Swedish Class", "Slovenian Class", "Ukranian Class", "Slovak Class", "Lithuanian Class", "Latvian Class", "Hungarian Class", "Finnish Class", "Filipino Class", "Farsi Class", "Danish Class", "Czech Class", "Croatian Class", "Catalan Class", "Practice French", "Practice German", "Practice English", "Practice Italian", "Practice Chinese", "Practice Japanese", "Practice Korean", "Practice Polish", "Practice Spanish", "Practice Arabic", "Practice Hebrew", "Practice Portuguese", "Practice Thai", "Practice Russian", "Practice Turkish", "Practice Dutch", "Practice Bulgarian", "Practice Greek", "Practice Hindi", "Practice Indonesian", "Practice Vietnamese", "Practice Norwegian", "Practice Swedish", "Practice Slovenian", "Practice Ukranian", "Practice Slovak", "Practice Lithuanian", "Practice Latvian", "Practice Hungarian", "Practice Finnish", "Practice Filipino", "Practice Farsi", "Practice Danish", "Practice Czech", "Practice Croatian", "Practice Catalan", flair_dic + "learn.png)" ],
   [ "planmyday", "plan week", "plan quarter", "plan day", "plan vacation", "week planning", "vacation planning", flair_dic + "plan.png)" ],
   [ "reachout", "reach out to", "write letter", "send invitations", flair_dic + "write.png)" ],
-  [ "read", "reading", "newspaper", "ebook", flair_dic + "read.png)" ],
   [ "walk", "going for a walk", "walking", flair_dic + "walk.png)" ]
 ];
 
@@ -113,3 +111,9 @@ var config = {
   characterData: true
 };
 observer.observe(target, config);
+
+
+// Change the Bubble Event background
+//window.onclick = function(whatclassandid) {
+//   document.getElementsByClassName('bubblemain')[0].style.backgroundImage = whatclassandid.srcElement.style.backgroundImage;
+//};
