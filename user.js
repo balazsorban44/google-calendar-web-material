@@ -3,7 +3,7 @@
 // @name          Google Calendar Web Material
 // @description   Google Calendar Web Material event flairs
 // @match         https://calendar.google.com/*
-// @version       1.0.1
+// @version       1.1
 // ==/UserScript==
 var month_dic = "url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/top_bg/";
 var month = new Array();
