@@ -4,7 +4,7 @@
   author: @bazsi44
   e-mail: info@balazsorban.com
   matches: https://calendar.google.com*
-  version: 2.0
+  version: 2.1
   ------------------ */
 /*HIDDEN*/
 
@@ -35,21 +35,27 @@
     position:relative;
 	box-shadow: 0px 0px 10px black;
 z-index:1000}
+.gb_Mb{padding:0;}
+.gb_Pb .gb_Ob{
+top:0}
+#gbq1{left:30px}
 .gb_Mb .gb_Qb{
-    background:none
+    width:204px;
+    height:60px;
+    position:relative;
+    background: url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/logo.png)
+    center center no-repeat;
+    background-size: 100%
 }
-.gb_Mb .gb_Qb:after {
+/*.gb_Mb .gb_Qb:after {
     position: absolute;
     top: -15px;
     left: 5px;
     font-size: 1.5em;
     color: white;
     content: "Calendar"
-}
-.gb_he {
-    background: #4285f4;
+}*/
 
-}
 /*SEARCHBAR*/
 
 #gbqfw {
@@ -60,26 +66,24 @@ z-index:1000}
 }
 #gbqfqw {
     border: 0;
-    background: #5e97f6;
-    border-radius: 5px
+    background: white;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px
 }
-#gbqfq {
-    position: absolute;
-    left: 30px;
-    color: white
-}
+
 .gbqfb {
-    position: absolute;
-    left: 0;
-    background: transparent
+    border-radius:5px;
 }
 /*Top image*/
 
 #vr-nav {
     top: 0;
-    height: 10vh;
-    background: url(https://goo.gl/WqJft2) no-repeat 0px -160px fixed;
-    background-size: 100%;
+    height: 15vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.15)), url(https://goo.gl/WqJft2) ;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+
     margin: 0
 }
 /*Buttons*/
@@ -175,30 +179,29 @@ background-size:50%
 }
 .nav-table {
     position: fixed;
-    top: 70px;
-    left: 32%;
-    z-index: 1
+    top: 90px;
+    right: 274px;
+
 }
 #topRightNavigation {
-    top: 70px;
+    top: 90px;
     position: fixed;
-    left: 16%
+    right: 50px
 }
+#topRightNavigation .button-strip {
+    margin:0;}
 /*Sidebar*/
 
 #nav {
-    position: fixed;
+    position: absolute;
     margin-left: 0;
-    top: 60px;
-    width: 16%;
-    height: 100%;
+    width: 13%;
     z-index: 1;
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4)
+	border-right:1px solid rgba(0,0,0,0.1)
 }
 .goog-zippy-expanded .monthtableBody {
-    padding-right: 0.2rem;
-    padding-left: 0;
+    padding:0
 }
 #dp_h,
 #dp_0,
@@ -206,18 +209,14 @@ background-size:50%
 #clst_fav,
 .calList {
     position: relative;
-    width: 85%;
+    width: 90%;
     margin-left: 7.5%
 }
 .monthtableBody {
     width: 100%
 }
 .monthtableBody .dp-cell {
-    padding: 0;
-    width: 2rem;
-    height: 2rem;
-    line-height: 0.5rem;
-    position: relative;
+	padding: 0.92em 0;
     border-radius: 50%;
 }
 .dp-weekday-selected,
