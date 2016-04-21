@@ -1,10 +1,9 @@
-@-moz-document url-prefix(https://calendar.google.com/) {
 /* ---------------
   name: Google Calendar Material
   author: @bazsi44
   e-mail: info@balazsorban.com
   matches: https://calendar.google.com*
-  version: 2.1
+  version: 2.1.1
   ------------------ */
 /*HIDDEN*/
 
@@ -23,7 +22,7 @@
 #onegoogbar {
 	position: relative;
 	box-shadow: 0px 0px 10px black;
-	z-index: 1
+	z-index: 100
 }
 .gb_Mb {
 	padding: 0;
@@ -167,21 +166,23 @@
 	position: relative;
 	left: -91px
 }
+/*
 .navBack {
 	-webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2));
 	background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0xNS40MSAxNi4wOWwtNC41OC00LjU5IDQuNTgtNC41OUwxNCA1LjVsLTYgNiA2IDZ6Ii8+CiAgICA8cGF0aCBkPSJNMC0uNWgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPgo8L3N2Zz4=) center;
 	background-size: 100%
-}
+}*/
 .date-nav-next {
 	padding: 0;
 	position: relative;
 	left: -42px
 }
+/*
 .navForward {
 	-webkit-filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.2));
 	background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik04LjU5IDE2LjM0bDQuNTgtNC41OS00LjU4LTQuNTlMMTAgNS43NWw2IDYtNiA2eiIvPgogICAgPHBhdGggZD0iTTAtLjI1aDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==) center;
 	background-size: 100%
-}
+}*/
 .nav-table {
 	position: fixed;
 	top: 80px;
@@ -313,6 +314,9 @@
 	background-repeat: no-repeat;
 	z-index:1
 }
+.resizer{
+	z-index:1
+}
 .wk-border {
 	position: relative;
 	left: 15px
@@ -342,17 +346,20 @@
 /*Event bubble*/
 
 .bubblemain{
-	background: lightgrey;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/top_bg/apr.jpg);
     background-size: 100%;
     background-position: bottom center;
-    border-radius:5px
+    border-top-left-radius:5px;
+	border-top-right-radius:5px
 
+}
+.bubble.has-bottom-prong{
+	border-radius:5px
 }
 
 .bubble, .hin-bubble .title-text, .hin-bubble .when{
     box-shadow:none;
 	color:white;
-    border-radius:25px;
 	border:none;
 }
 
@@ -365,7 +372,7 @@ background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9Ij
 color:white}
 
 
-.details-button, .details-button:hover {
+.details-button, .details-button:hover, .edit-btn, .edit-btn:hover, .done-btn, .done-btn:hover, .delete-btn, .delete-btn:hover {
 	background: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0zIDE3LjI1VjIxaDMuNzVMMTcuODEgOS45NGwtMy43NS0zLjc1TDMgMTcuMjV6TTIwLjcxIDcuMDRjLjM5LS4zOS4zOS0xLjAyIDAtMS40MWwtMi4zNC0yLjM0Yy0uMzktLjM5LTEuMDItLjM5LTEuNDEgMGwtMS44MyAxLjgzIDMuNzUgMy43NSAxLjgzLTEuODN6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==) no-repeat center center;
 	background-size: auto 50%;
 	padding: 0;
@@ -373,11 +380,28 @@ color:white}
 	border-radius: 50%;
 	background-color: #4285f4;
 	position: absolute;
-	bottom: 0.8rem;
+	bottom: 10px;
 	right: 10px;
 	font-size: 0;
 	min-width: 40px !important;
-	height: 40px !important
+	height: 40px !important;
+	transition:0.2s
+}
+.done-btn, .done-btn:hover{
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz4KICAgIDxwYXRoIGQ9Ik05IDE2LjJMNC44IDEybC0xLjQgMS40TDkgMTkgMjEgN2wtMS40LTEuNEw5IDE2LjJ6Ii8+Cjwvc3ZnPg==);
+}
+.edit-btn ,.edit-btn:hover{
+	right: 60px
+}
+
+.delete-btn, .delete-btn:hover {
+	background-color: #db4437;
+	left:20px;
+	right:auto;
+	background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjQ4IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSI0OCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik02IDE5YzAgMS4xLjkgMiAyIDJoOGMxLjEgMCAyLS45IDItMlY3SDZ2MTJ6TTE5IDRoLTMuNWwtMS0xaC01bC0xIDFINXYyaDE0VjR6Ii8+CiAgICA8cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+Cjwvc3ZnPg==)
+}
+.delete-btn:hover{
+	background-color: #e06e55
 }
 .neb-footer {
 	margin: 0;
@@ -434,5 +458,4 @@ color:white}
 	color: white;
 	padding-left: 10px;
 	content: 'Enter title, times, people, places...'
-}
 }
