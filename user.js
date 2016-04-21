@@ -86,7 +86,7 @@ var event_flair = [
   [ "meet", "planmyday", "plan week", "plan quarter", "plan day", "plan vacation", "week planning", "vacation planning", flair_dic + "plan.png)" ],
   [ "reachout", "reach out to", "write letter", "send invitations", flair_dic + "write.png)" ],
   [ "read", "reading", "newspaper", "ebook", flair_dic + "read.png)" ],
-  [ "deal", "agreement", "meeting", "appointment", "meet", flair_dic + "meet_v3.png)" ],
+  [ "deal", "agreement", "meeting", "appointment", "meet", flair_dic + "meet_v4.png)" ],
   [ "walk", "going for a walk", "walking", flair_dic + "walk.png)" ]
 ];
 
