@@ -87,6 +87,7 @@ var event_flair = [
   [ "reachout", "reach out to", "write letter", "send invitations", flair_dic + "write.png)" ],
   [ "read", "reading", "newspaper", "ebook", flair_dic + "read.png)" ],
   [ "deal", "agreement", "meeting", "appointment", "meet", flair_dic + "meet_v4.png)" ],
+  [ "cook", "kitchen", "soup", "cooking", flair_dic + "cook.png)" ],
   [ "walk", "going for a walk", "walking", flair_dic + "walk.png)" ]
 ];
 
