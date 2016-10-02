@@ -16,7 +16,7 @@ month[5] = month_dic + "jun.jpg";
 month[6] = month_dic + "jul.jpg";
 month[7] = month_dic + "aug.jpg";
 month[8] = month_dic + "sep.jpg";
-month[9] = month_dic + "okt.jpg";
+month[9] = month_dic + "oct.jpg";
 month[10] = month_dic + "nov.jpg";
 month[11] = month_dic + "dec.jpg";
 
