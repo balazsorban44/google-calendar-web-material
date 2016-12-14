@@ -3,14 +3,14 @@
 // @name          Google Calendar Web Material
 // @description   Google Calendar Web Material event flairs
 // @match         https://calendar.google.com/*
-// @version       2.0
+// @version       2.0.1
 // @namespace https://greasyfork.org/users/39251
 // ==/UserScript==
 
 const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
-document.getElementById("vr-nav").style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, transparent 20%), url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/months/" + new Date().getMonth() + ".jpg)";
+document.getElementById("vr-nav").style.backgroundImage = "linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, transparent 20%), url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/app/images/months/" + new Date().getMonth() + ".jpg)";
 
-const eventFlairBaseUrl = "url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/images/event-flairs/";
+const eventFlairBaseUrl = "url(https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/app/images/event-flairs/";
 const eventFlairs = [
     ["xmasmeal", "christmas dinner", "christmas lunch", "christmas brunch", "christmas luncheon", "xmas dinner", "xmas lunch", "xmas brunch", "xmas luncheon", "x-mas dinner", "x-mas lunch", "x-mas brunch", "x-mas luncheon", "christmas eve dinner", "christmas eve lunch", "christmas eve brunch", "christmas eve luncheon", "xmas eve dinner", "xmas eve lunch", "xmas eve brunch", "xmas eve luncheon", "x-mas eve dinner", "x-mas eve lunch", "x-mas eve brunch", "x-mas eve luncheon", "xmasfood"],
     ["christmas party", "xmas party", "x-mas party", "christmas eve party", "xmas eve party", "x-mas eve party", "xmasparty"],
