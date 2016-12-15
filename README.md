@@ -44,5 +44,5 @@ For functionality, here is the userscript:
 
 ----------
 
-###**Reporting issues**
-Please use the [issues](https://github.com/balazsorban44/google-calendar-web-material/issues) channel for reporting any problems.
+###**Reporting issues/Suggesting ideas**
+Please use the [issues](https://github.com/balazsorban44/google-calendar-web-material/issues) tab for reporting any problems or suggesting ideas.
