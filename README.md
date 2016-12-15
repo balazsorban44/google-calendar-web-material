@@ -1,22 +1,20 @@
 # Google Calendar Web Material
 ###**Description**
-This project is dedicated to give the [https://calendar.google.com/](https://calendar.google.com/) site a [Material Design](https://material.google.com/) look.
-
-This is **my first project from scratch** (please treat it accordingly), which I am very excited about. I hope you will enjoy it! 
-
-If you have any questions, or you would like to contribute, contact me: [info@balazsorban.com](mailto:info@balazsorban.com)
+This project is dedicated to give the [https://calendar.google.com/](https://calendar.google.com/) site a [Material Design](https://material.google.com/) look. This is **my first project from scratch** (please treat it accordingly), which I am very excited about. I hope you will enjoy it! If you have any questions, or you would like to contribute, contact me: [info@balazsorban.com](mailto:info@balazsorban.com)
 ###**Functionality**
 #####Dynamic background
  - The background changes each month to correspond Google's images extracted right from the Google Calendar Android app.
+ 
 #####Event flairs
-- On mobile devices, if an event's title contains a special word, the calendar will treat it special, and will give it an image to make it stand out better. Here is a [list](https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/app/languages/events-EN.json) of usable words (WIP).
+ - On mobile devices, if an event's title contains a special word, the calendar will treat it special, and will give it an image to make it stand out better. Here is a [list](https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/app/languages/events-EN.json) of usable words (WIP).
 *NOTE: I already added some extra, and I am planning to expand the default list with even more event flairs.*
  Example of an event flair on mobile:  
      <img src="http://www.mayastepien.nl/googlecalendar/google-phone02.jpg" height="150">
      Event containing the word "drink".
+     
 ###**Preview**
-<center>[<img src="https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/page/img/header.png" width="70%">](https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/page/img/header.png)
-v3.0-beta</center>
+[<img src="https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/page/img/header.png" width="70%">](https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/page/img/header.png)
+v3.0-beta
 
 ---------
 ###**Usage**
