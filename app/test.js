@@ -1,8 +1,5 @@
 function test(){
-  console.log("This is a test for userscript @require.");
-};
-
-const eventsEnglish = [
+  return [
   ["art", "sketching workshop", "painting", "drawing workshop", "art workshops", "art workshop"],
   ["badminton", "billiard"],
   ["baseball"],
@@ -64,4 +61,5 @@ const eventsEnglish = [
   ["xmasfood", "xmasmeal", "xmas luncheon", "xmas lunch", "xmas eve luncheon", "xmas eve lunch", "xmas eve dinner", "xmas eve brunch", "xmas dinner", "xmas brunch", "x-mas luncheon", "x-mas lunch", "x-mas eve luncheon", "x-mas eve lunch", "x-mas eve dinner", "x-mas eve brunch", "x-mas dinner", "x-mas brunch", "christmas luncheon", "christmas lunch", "christmas eve luncheon", "christmas eve lunch", "christmas eve dinner", "christmas eve brunch", "christmas dinner", "christmas brunch"],
   ["xmasparty", "xmas party", "xmas eve party", "x-mas party", "x-mas eve party", "christmas party", "christmas eve party"],
   ["yoga"]
-];
+]
+};
