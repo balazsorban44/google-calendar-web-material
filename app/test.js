@@ -1,3 +1,1 @@
-function test(){
-  console.log("This is a test for userscript @require.");
-};
+var test = "hello"
