@@ -13,7 +13,7 @@ This project is dedicated to give the [https://calendar.google.com/](https://cal
      Event containing the word "drink".
      
 ###**Preview**
-[<img src="https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/page/img/header.png" width="70%">](https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/page/img/header.png)
+[<img src="https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/page/img/header.png" width="70%">](https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/page/img/header-v3_1.png)
 v3.0-beta
 
 ---------
