@@ -3,7 +3,7 @@
 // @name          Google Calendar Web Material
 // @description   Google Calendar Web Material event flairs
 // @match         https://calendar.google.com/*
-// @version       2.1
+// @version       2.1.1
 // @require       https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/app/languages/events-EN.js
 // @namespace     https://greasyfork.org/users/39251
 // ==/UserScript==
