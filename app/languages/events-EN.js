@@ -55,7 +55,7 @@ var eventsEnglish = [
   ["violin", "violins"],
   ["walk", "walking"],
   ["wedding", "weddings", "wedding-eve party", "wedding eve"],
-  ["write", "write letter", "send invitations", "reachout", "reach out to"],
+  ["write", "phone","phonecall", "phone call", "reach", "contact", "write letter", "send invitations", "reachout", "reach out to"],
   ["xmas", "x-mas", "christmas"],
   ["xmasfood", "xmasmeal", "xmas luncheon", "xmas lunch", "xmas eve luncheon", "xmas eve lunch", "xmas eve dinner", "xmas eve brunch", "xmas dinner", "xmas brunch", "x-mas luncheon", "x-mas lunch", "x-mas eve luncheon", "x-mas eve lunch", "x-mas eve dinner", "x-mas eve brunch", "x-mas dinner", "x-mas brunch", "christmas luncheon", "christmas lunch", "christmas eve luncheon", "christmas eve lunch", "christmas eve dinner", "christmas eve brunch", "christmas dinner", "christmas brunch"],
   ["xmasparty", "xmas party", "xmas eve party", "x-mas party", "x-mas eve party", "christmas party", "christmas eve party"],
