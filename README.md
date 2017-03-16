@@ -1,26 +1,26 @@
 # Google Calendar Web Material
-###**Description**
+### **Description**
 This project is dedicated to give the [https://calendar.google.com/](https://calendar.google.com/) site a [Material Design](https://material.google.com/) look. This is **my first project from scratch** (please treat it accordingly), which I am very excited about. I hope you will enjoy it! If you have any questions, or you would like to contribute, contact me: [info@balazsorban.com](mailto:info@balazsorban.com)
-###**Functionality**
-#####Dynamic background
+### **Functionality**
+##### Dynamic background
  - The background changes each month to correspond Google's images extracted right from the Google Calendar Android app.
  
-#####Event flairs
+##### Event flairs
  - On mobile devices, if an event's title contains a special word, the calendar will treat it special, and will give it an image to make it stand out better. Here is a [list](https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/app/languages/events-EN.json) of usable words (WIP).
 *NOTE: I already added some extra, and I am planning to expand the default list with even more event flairs.*
  Example of an event flair on mobile:  
      <img src="http://www.mayastepien.nl/googlecalendar/google-phone02.jpg" height="150">
      Event containing the word "drink".
      
-###**Preview**
+### **Preview**
 [<img src="https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/page/img/header-v3_1.png" width="70%">](https://raw.githubusercontent.com/balazsorban44/google-calendar-web-material/master/page/img/header-v3_1.png)
 v3.1
 
 ---------
-###**Usage**
+### **Usage**
 *(NOTE! I am using Google Chrome.)*
 
-####**Requiremenets**
+#### **Requiremenets**
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Google_Chrome_for_Android_Icon_2016.svg" alt="Google Chrome for Android Icon 2016.svg" height="24">  For Chrome and other Chromium-based browsers:
 
@@ -35,7 +35,7 @@ v3.1
 
 
 
-####**Installation**
+#### **Installation**
 For styling grab the userstyle:
 [https://userstyles.org/styles/126526](https://userstyles.org/styles/126526)
 
@@ -44,5 +44,5 @@ For functionality, here is the userscript:
 
 ----------
 
-###**Reporting issues/Suggesting ideas**
+### **Reporting issues/Suggesting ideas**
 Please use the [issues](https://github.com/balazsorban44/google-calendar-web-material/issues) tab for reporting any problems or suggesting ideas.
