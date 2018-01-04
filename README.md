@@ -1,4 +1,7 @@
 # Google Calendar Web Material
+
+<img src="https://img.shields.io/badge/status-inactive-lightgrey.svg"/>
+
 ### **Description**
 This project is dedicated to give the [https://calendar.google.com/](https://calendar.google.com/) site a [Material Design](https://material.google.com/) look. This is **my first project from scratch** (please treat it accordingly), which I am very excited about. I hope you will enjoy it! If you have any questions, or you would like to contribute, contact me: [info@balazsorban.com](mailto:info@balazsorban.com)
 ### **Functionality**
